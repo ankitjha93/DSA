@@ -1,118 +1,120 @@
 # Data Structures & Algorithms (DSA) in C++
 
-[![Language](https://img.shields.io/badge/Language-C%2B%2B17-00599C?style=flat-square&logo=c%2B%2B)](https://isocpp.org/)
-[![Problems](https://img.shields.io/badge/Problems%20Solved-400%2B-brightgreen?style=flat-square)](#topic-breakdown)
-[![Topics](https://img.shields.io/badge/Topics-15%2B-orange?style=flat-square)](#repository-structure)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
+[![Language](https://img.shields.io/badge/Language-C%2B%2B17-00599C?style=for-the-badge&logo=c%2B%2B)](https://isocpp.org/)
+[![Problems](https://img.shields.io/badge/Problems%20Solved-400%2B-2ea44f?style=for-the-badge)](#curriculum--topic-index)
+[![Modules](https://img.shields.io/badge/Roadmap%20Modules-15-blueviolet?style=for-the-badge)](#learning-roadmap)
+[![Standard](https://img.shields.io/badge/Standard-Clean%20%26%20Optimized-orange?style=for-the-badge)](#compilation--development-guide)
 
-A curated and comprehensive collection of **Data Structures and Algorithms** problem solutions implemented in modern **C++ (C++17)**. This repository serves as an extensive study guide and reference covering essential DSA concepts, standard templates, LeetCode patterns, Striver SDE sheet problems, and campus placement prep (TCS NQT, etc.).
+A structured, industry-aligned repository containing **400+** Data Structures and Algorithms solutions implemented in modern **C++ (C++17)**. 
+
+Organized sequentially in a **pedagogical learning order**—spanning core language idioms, standard data structures, advanced algorithmic paradigms (Striver SDE Sheet, LeetCode, Codeforces), and campus placement coding patterns (TCS NQT).
 
 ---
 
-## Repository Structure
+## Learning Roadmap
+
+Follow the numbered curriculum from foundational primitives to advanced graph and DP paradigms:
 
 ```text
-DSA/
-├── Arrays/                         # Array manipulation, searching, and sorting
-├── Binary Search Tree/             # BST operations, validations, and traversals
-├── Binary Tree/                    # Tree traversals, views, construction, and properties
-├── c++/                            # C++ language core, STL containers, algorithms & OOP
-│   ├── Dequeue/                    # Double-ended queue operations
-│   ├── LIst/                       # Forward list, doubly linked list (std::list)
-│   ├── Map/                        # std::map & ordered map problems
-│   ├── Multi Map/                  # std::multimap usage
-│   ├── Multi Set/                  # std::multiset usage
-│   ├── Mutationg STL Algorithm/    # std::reverse, next_permutation, merge, etc.
-│   ├── Non-Mutationg STL Algorithm/# binary_search, lower_bound, upper_bound, etc.
-│   ├── OOPS/                       # Classes, inheritance, polymorphism, abstraction
-│   ├── Pairs/                      # std::pair utility and sorting
-│   ├── Priority Queue/             # std::priority_queue and custom comparators
-│   ├── Queue/                      # std::queue operations
-│   ├── Set/                        # std::set operations, floor & ceil
-│   ├── Stack/                      # std::stack implementations and exercises
-│   ├── Unordered Map/              # Hash map hashing, frequency counting
-│   ├── Unordered Set/              # Hash set uniqueness, intersections
-│   └── vectors/                    # Dynamic array methods, sorting, manipulation
-├── Dynamic Programming/            # Advanced DP paradigms (Memoization & Tabulation)
-│   ├── 1D DP/                      # Linear state transitions (Fibonacci, Frog Jump, etc.)
-│   ├── DP on LIS/                  # Longest Increasing Subsequence variants
-│   ├── DP on Squares/              # Maximal square / rectangle DP
-│   ├── DP on Stocks/               # Best Time to Buy and Sell Stock series
-│   ├── DP on Strings/              # LCS, Edit Distance, Longest Palindromic Substring
-│   └── Partition DP/               # Matrix Chain Multiplication, Palindrome Partitioning
-├── Graphs/                         # Graph theory, BFS, DFS, Shortest Path, Disjoint Set (DSU)
-├── Greedy Algorithms/              # Interval scheduling, Jump Game, Fractional Knapsack
-├── Heap/                           # Min/Max Heap from scratch, Heapify, HeapSort, Top-K
-├── Linked List/                    # Singly/Doubly Linked List, Loop detection, Reversal
-├── Miscellaneous/                  # General algorithmic challenges and puzzles
-├── Sliding Window & 2 Pointer/     # Subarray constraints, window expansion/shrink
-├── Stack&Queue/                    # Monotonic Stacks, LRU/LFU Caches, Expressions
-├── String/                         # String matching, Anagrams, Palindromes
-├── TCS NQT/                        # Placement-specific problems and aptitude coding
-├── Tries/                          # Prefix trees, insertion, search, prefix count
-└── demo/                           # Quick scratchpad for I/O and testing
+[ 01: C++ & STL ] ──────► [ 02: Arrays ] ──────► [ 03: Strings ]
+                                                        │
+┌───────────────────────────────────────────────────────┘
+▼
+[ 04: Linked List ] ────► [ 05: Stack & Queue ] ──► [ 06: Two Pointer / Sliding Window ]
+                                                                   │
+┌──────────────────────────────────────────────────────────────────┘
+▼
+[ 07: Binary Tree ] ────► [ 08: Binary Search Tree ] ──► [ 09: Heaps & Priority Queues ]
+                                                                   │
+┌──────────────────────────────────────────────────────────────────┘
+▼
+[ 10: Greedy ] ─────────► [ 11: Dynamic Programming ] ─► [ 12: Graphs ]
+                                                                   │
+┌──────────────────────────────────────────────────────────────────┘
+▼
+[ 13: Tries ] ──────────► [ 14: TCS NQT Prep ] ────────► [ 15: Miscellaneous & Bit Tricks ]
 ```
 
 ---
 
-## Topic Breakdown
+## Curriculum & Topic Index
 
-| Topic | Directory | Problem Count | Highlights & Key Concepts |
-| :--- | :--- | :---: | :--- |
-| **C++ Core & STL** | [`c++/`](./c%2B%2B) | **113** | OOP principles, Template metaprogramming, STL Containers (`vector`, `map`, `set`, `queue`), and Mutating / Non-mutating algorithms |
-| **Dynamic Programming** | [`Dynamic Programming/`](./Dynamic%20Programming) | **53** | 1D DP, DP on LIS, DP on Strings (LCS, Edit Distance), Stock series, Matrix Chain Multiplication |
-| **Graphs** | [`Graphs/`](./Graphs) | **51** | Graph representations, BFS, DFS, Disjoint Set Union (DSU), Shortest Paths, Topological Sort |
-| **Binary Tree** | [`Binary Tree/`](./Binary%20Tree) | **31** | Preorder, Inorder, Postorder, Morris Traversal, Tree Views (Top, Bottom, Left, Right), LCA, Diameter |
-| **Stack & Queue** | [`Stack&Queue/`](./Stack%26Queue) | **27** | Monotonic Stack, Next/Previous Greater Element, Rainwater Trapping, LRU & LFU Cache |
-| **Binary Search Tree** | [`Binary Search Tree/`](./Binary%20Search%20Tree) | **20** | BST validation, insertion, deletion, floor/ceil, K-th smallest element |
-| **Sliding Window & 2 Pointer** | [`Sliding Window & 2 Pointer/`](./Sliding%20Window%20%26%202%20Pointer) | **20** | Longest Substring Without Repeating Characters, Subarrays with K Distinct, Minimum Window Substring |
-| **Heap / Priority Queue** | [`Heap/`](./Heap) | **17** | Custom Min/Max Heap, `heapify`, HeapSort, K-th largest element, Merge K Sorted Lists |
-| **Arrays** | [`Arrays/`](./Arrays) | **17** | Two Pointers, Dutch National Flag, Kadane's Algorithm, Prefix Sums, Matrix rotation |
-| **Greedy Algorithms** | [`Greedy Algorithms/`](./Greedy%20Algorithms) | **15** | N Meetings in One Room, Non-overlapping Intervals, Jump Game I & II, Candy Distribution |
-| **Linked List** | [`Linked List/`](./Linked%20List) | **12** | Fast & Slow pointers (Floyd's Cycle detection), Reverse in K-Groups, Rotate list, Add two numbers |
-| **Strings** | [`String/`](./String) | **9** | Anagram detection, Pangram check, Pattern searching, Character counting |
-| **Tries** | [`Tries/`](./Tries) | **6** | Prefix Tree insertion, lookup, prefix count, Bit manipulation with Trie |
-| **TCS NQT** | [`TCS NQT/`](./TCS%20NQT) | **5** | Campus placement preparation and standard company patterns |
-| **Miscellaneous** | [`Miscellaneous/`](./Miscellaneous) | **4** | Math, Bit manipulation, and general puzzles |
-| **Total** | | **400+** | **Comprehensive C++ Problem Collection** |
+| Step | Topic Directory | Problems | Key Concepts & Patterns Covered |
+| :---: | :--- | :---: | :--- |
+| **01** | [`01-CPP-and-STL/`](./01-CPP-and-STL) | **115** | OOP (Inheritance, Polymorphism), Templates, STL Containers (`Vectors`, `List`, `Deque`, `Set`, `Map`), Mutating & Non-Mutating Algorithms, Lambdas |
+| **02** | [`02-Arrays/`](./02-Arrays) | **17** | Kadane's Algorithm, Dutch National Flag (Sort 0-1-2), Array Rotations, Duplicate Detection, Inversion Count |
+| **03** | [`03-Strings/`](./03-Strings) | **9** | Anagram Detection, Pattern Searching, Palindromic Checks, Case Conversion, Consonant & Vowel Manipulation |
+| **04** | [`04-Linked-List/`](./04-Linked-List) | **12** | Fast & Slow Pointers (Floyd's Cycle Detection), Reverse in K-Groups, Rotate List, Intersection Point, Sorted Merging |
+| **05** | [`05-Stack-and-Queue/`](./05-Stack-and-Queue) | **27** | Monotonic Stack, Next/Previous Greater Element, Rainwater Trapping, LRU & LFU Cache, Expression Conversions |
+| **06** | [`06-Sliding-Window-Two-Pointer/`](./06-Sliding-Window-Two-Pointer) | **20** | Variable & Fixed Windows, Longest Substring Without Repeating Characters, Fruit Into Baskets, Minimum Window Substring |
+| **07** | [`07-Binary-Tree/`](./07-Binary-Tree) | **31** | Traversals (In/Pre/Post/Level-Order/Morris), Tree Views (Top/Bottom/Left/Right), Diameter, LCA, Burning Tree |
+| **08** | [`08-Binary-Search-Tree/`](./08-Binary-Search-Tree) | **20** | BST Validation, Search/Insert/Delete, Floor & Ceil, Inorder Successor/Predecessor, Largest BST in Binary Tree |
+| **09** | [`09-Heap/`](./09-Heap) | **17** | Min & Max Heap from scratch, `heapify`, HeapSort, Kth Largest/Smallest Element, Merge K Sorted Lists |
+| **10** | [`10-Greedy-Algorithms/`](./10-Greedy-Algorithms) | **15** | N Meetings in One Room, Non-Overlapping Intervals, Jump Game I & II, Fractional Knapsack, Candy Distribution |
+| **11** | [`11-Dynamic-Programming/`](./11-Dynamic-Programming) | **53** | 1D DP, 2D Grid DP, Subsequences / Knapsack, LIS, Strings (LCS, Edit Distance), Stocks Series, Partition DP |
+| **12** | [`12-Graphs/`](./12-Graphs) | **51** | BFS, DFS, Cycle Detection, Topological Sort (Kahn's), Dijkstra, Bellman-Ford, Floyd-Warshall, Disjoint Set Union (DSU) |
+| **13** | [`13-Tries/`](./13-Tries) | **6** | Trie Node Implementation, Prefix Matching, Distinct Substrings Count, Maximum XOR of Two Numbers |
+| **14** | [`14-TCS-NQT/`](./14-TCS-NQT) | **5** | Placement-focused challenges: GCD of Strings, Increasing Triplet, Kids With Greatest Candies |
+| **15** | [`15-Miscellaneous/`](./15-Miscellaneous) | **4** | Built-in bit manipulations (`__builtin_popcount`), Matrix properties, C++ Tuple utilities |
+| **--** | [`demo/`](./demo) | **1** | Scratchpad for test cases and local I/O execution |
+| | **Total Solved Problems** | **403** | **Production-Quality C++ Implementations** |
 
 ---
 
-## Getting Started & Compilation
+## Detailed Module Deep-Dives
+
+### 01. C++ Core & Standard Template Library (STL)
+Located in [`01-CPP-and-STL/`](./01-CPP-and-STL):
+- **Core Basics & Language Features**: Templates, Function Pointers, File I/O (`readingFile.cpp`, `writingFile.cpp`).
+- **Object-Oriented Programming (OOPS)**: Abstraction, Encapsulation, Single/Multiple/Hierarchical Inheritance, Polymorphism, Inner Classes, Object Cloning.
+- **STL Containers**: `Vectors`, `List`, `Deque`, `Queue`, `Stack`, `Set`, `Multi-Set`, `Map`, `Multi-Map`, `Unordered-Map`, `Unordered-Set`, `Priority-Queue`, `Pairs`.
+- **Algorithms**: Mutating algorithms (`next_permutation`, `prev_permutation`, `reverse`, `rotate`, `sortByLambdaExpression`), Non-mutating algorithms (`binary_search`, `lower_bound`, `upper_bound`, `accumulate`, `count`, `find`).
+
+### 11. Dynamic Programming Framework
+Located in [`11-Dynamic-Programming/`](./11-Dynamic-Programming), organized into 8 modular paradigms:
+1. **[`1D-DP/`](./11-Dynamic-Programming/1D-DP)**: Fibonacci, Climbing Stairs, Frog Jump I & II, House Robber, Maximum Sum of Non-Adjacent Elements.
+2. **[`2D-Grid-DP/`](./11-Dynamic-Programming/2D-Grid-DP)**: Ninja's Training, Unique Paths I & II, Minimum Path Sum in Grid, Triangular Grid, Maximum Path Sum in Matrix, Chocolate Pickup (Cherry Pickup II).
+3. **[`DP-on-Subsequences/`](./11-Dynamic-Programming/DP-on-Subsequences)**: 0/1 Knapsack, Subset Sum equals K, Partition Equal Subset Sum, Partition with Given Difference, Count Subsets with Sum K, Coin Change II, Minimum Elements, Target Sum, Rod Cutting, Unbounded Knapsack.
+4. **[`DP-on-Strings/`](./11-Dynamic-Programming/DP-on-Strings)**: Longest Common Subsequence (LCS), Longest Common Substring, Printing LCS, Longest Palindromic Subsequence, Minimum Insertions to make Palindrome, Edit Distance, Wildcard Matching, Distinct Subsequences, Word Break.
+5. **[`DP-on-Stocks/`](./11-Dynamic-Programming/DP-on-Stocks)**: Best Time to Buy and Sell Stock I, II, III, IV, with Cooldown, and with Transaction Fee.
+6. **[`DP-on-LIS/`](./11-Dynamic-Programming/DP-on-LIS)**: Longest Increasing Subsequence, Largest Divisible Subset, Longest Bitonic Subsequence, Longest String Chain.
+7. **[`Partition-DP/`](./11-Dynamic-Programming/Partition-DP)**: Matrix Chain Multiplication (MCM), Minimum Cost to Cut a Stick, Burst Balloons, Palindrome Partitioning, Partition Array for Maximum Sum, Boolean Evaluation.
+8. **[`DP-on-Squares/`](./11-Dynamic-Programming/DP-on-Squares)**: Maximal Rectangle, Count Square Submatrices with All Ones.
+
+---
+
+## Compilation & Development Guide
 
 ### Prerequisites
-- **Compiler**: GCC / G++ (supporting C++17 or newer) or Clang / MSVC.
-- **Editor**: [Visual Studio Code](https://code.visualstudio.com/) with the [C/C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools).
+- **Compiler**: GCC / G++ (supporting C++17 or newer)
+- **Editor**: [Visual Studio Code](https://code.visualstudio.com/) with the [C/C++ Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
 
-### Compiling and Running via Command Line
+### Command-Line Compilation
+
+Compile any file directly with C++17 optimization:
 
 ```bash
-# Compile with C++17 standard
-g++ -std=c++17 -Wall "Arrays/kadane.cpp" -o solution
+# Example: Compiling Dijkstra's algorithm from Graphs
+g++ -std=c++17 -Wall "12-Graphs/dijikstrasAlgorithmPQ.cpp" -o solution
 
-# Run executable
+# Execute
 ./solution
 
-# Run with custom input / output redirection
-./solution < input.txt > output.txt
+# Execute with input/output redirection
+./solution < demo/input.txt > demo/output.txt
 ```
 
 ### Visual Studio Code Integration
-Pre-configured tasks are available in [`.vscode/tasks.json`](./.vscode/tasks.json) to quickly build and test files:
-- Press `Ctrl + Shift + B` to compile the active file.
-- Automatically handles standard input/output redirection if `input.txt` and `output.txt` are provided.
-
----
-
-## Coding Guidelines
-
-- **Standard**: C++17
-- **Time & Space Complexity**: Analyzed and optimized with efficient Big-O runtime and auxiliary space considerations.
-- **Clean Code**: Meaningful variable names, modular helper functions, and STL idioms.
+The repository includes a pre-configured [`.vscode/tasks.json`](./.vscode/tasks.json):
+- Open any `.cpp` file in VS Code.
+- Press **`Ctrl + Shift + B`** to trigger the build task.
+- The build task automatically links MinGW `g++.exe` with `-std=c++17` flags.
+- Compiled binaries are automatically ignored by [`.gitignore`](./.gitignore) to keep the repository clean.
 
 ---
 
 ## Author
 
+- **Author**: Ankit Jha
 - **GitHub**: [@ankitjha93](https://github.com/ankitjha93)
 - **Email**: [93ankitjha@gmail.com](mailto:93ankitjha@gmail.com)
