@@ -33,6 +33,10 @@ Follow the numbered curriculum from foundational primitives to advanced graph an
 ┌──────────────────────────────────────────────────────────────────┘
 ▼
 [ 13: Tries ] ──────────► [ 14: TCS NQT Prep ] ────────► [ 15: Miscellaneous & Bit Tricks ]
+                                                                   │
+┌──────────────────────────────────────────────────────────────────┘
+▼
+[ 16: POTD (Daily LeetCode & GFG Tracker) ]
 ```
 
 ---
@@ -56,8 +60,9 @@ Follow the numbered curriculum from foundational primitives to advanced graph an
 | **13** | [`13-Tries/`](./13-Tries) | **6** | Trie Node Implementation, Prefix Matching, Distinct Substrings Count, Maximum XOR of Two Numbers |
 | **14** | [`14-TCS-NQT/`](./14-TCS-NQT) | **5** | Placement-focused challenges: GCD of Strings, Increasing Triplet, Kids With Greatest Candies |
 | **15** | [`15-Miscellaneous/`](./15-Miscellaneous) | **4** | Built-in bit manipulations (`__builtin_popcount`), Matrix properties, C++ Tuple utilities |
+| **16** | [`16-POTD/`](./16-POTD) | **Daily** | Daily Problem of the Day solutions from **LeetCode** and **GeeksforGeeks**, with automated scaffolding & logging |
 | **--** | [`demo/`](./demo) | **1** | Scratchpad for test cases and local I/O execution |
-| | **Total Solved Problems** | **403** | **Production-Quality C++ Implementations** |
+| | **Total Solved Problems** | **400+** | **Production-Quality C++ Implementations** |
 
 ---
 
@@ -80,6 +85,13 @@ Located in [`11-Dynamic-Programming/`](./11-Dynamic-Programming), organized into
 6. **[`DP-on-LIS/`](./11-Dynamic-Programming/DP-on-LIS)**: Longest Increasing Subsequence, Largest Divisible Subset, Longest Bitonic Subsequence, Longest String Chain.
 7. **[`Partition-DP/`](./11-Dynamic-Programming/Partition-DP)**: Matrix Chain Multiplication (MCM), Minimum Cost to Cut a Stick, Burst Balloons, Palindrome Partitioning, Partition Array for Maximum Sum, Boolean Evaluation.
 8. **[`DP-on-Squares/`](./11-Dynamic-Programming/DP-on-Squares)**: Maximal Rectangle, Count Square Submatrices with All Ones.
+
+### 16. Problem of the Day (POTD) Tracking
+Located in [`16-POTD/`](./16-POTD):
+- Tracks daily problem-solving consistency across **LeetCode** and **GeeksforGeeks**.
+- Chronologically partitioned into monthly directories (`LeetCode/YYYY-MM/` and `GeeksforGeeks/YYYY-MM/`).
+- Includes a PowerShell automation script [`new-potd.ps1`](./16-POTD/new-potd.ps1) to scaffold new C++ solutions with structured boilerplate and automatically update the streak log.
+- Full details, streak tracker, and table log are documented in [`16-POTD/README.md`](./16-POTD/README.md).
 
 ---
 
