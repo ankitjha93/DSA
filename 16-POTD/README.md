@@ -55,6 +55,5 @@ The script will automatically:
 
 | Date | Platform | Problem Title | Difficulty | Topic | Solution | Complexity |
 | :---: | :---: | :--- | :---: | :--- | :---: | :---: |
+| `2026-10-16` | LeetCode | [Subarrays Distinct Element Sum of Squares II](https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/) | **Hard** | Segment Tree, Lazy Propagation | [`Code`](./LeetCode/2026-10/2026-10-16-subarrays-distinct-element-sum-of-squares-ii.cpp) | $O(N \log N)$ / $O(N)$ |
 | `2026-10-16` | GeeksforGeeks | [Successful Binary Searches Irrespective of Pivot](https://www.geeksforgeeks.org/problems/count-always-found/1) | **Medium** | Array, Prefix/Suffix | [`Code`](./GeeksforGeeks/2026-10/2026-10-16-successful-binary-searches-irrespective-of-pivot.cpp) | $O(N)$ / $O(N)$ |
-| `2026-10-16` | GeeksforGeeks | [Subarray with Given Sum](https://practice.geeksforgeeks.org/problems/subarray-with-given-sum) | **Medium** | Sliding Window | [`Code`](./GeeksforGeeks/2026-10/2026-10-16-subarray-with-given-sum.cpp) | O(...) / O(...) |
-| `2026-10-16` | LeetCode | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string) | **Medium** | String, Two Pointers | [`Code`](./LeetCode/2026-10/2026-10-16-reverse-words-in-a-string.cpp) | O(...) / O(...) |
