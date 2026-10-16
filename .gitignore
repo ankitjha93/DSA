@@ -1,0 +1,26 @@
+# Compiled Object files, symbols and libraries
+*.o
+*.obj
+*.ilk
+*.pdb
+*.tlog
+*.idb
+
+# Executables
+*.exe
+*.out
+*.app
+*.bin
+
+# Local I/O files from competitive programming test runs
+output.txt
+demo/output.txt
+
+# VS Code generated binaries (preserve tasks.json, settings.json, c_cpp_properties.json)
+.vscode/*.exe
+.vscode/*.out
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
